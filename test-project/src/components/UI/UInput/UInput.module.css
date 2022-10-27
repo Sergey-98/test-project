@@ -1,0 +1,26 @@
+.myInput {
+  width: 835px;
+  height: 70px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 24px;
+  border: 2px solid #4F27BF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .myInput {
+    width: 500px;
+    height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .myInput {
+    width: 210px;
+    height: 25px;
+    font-size: 10px;
+  }
+}

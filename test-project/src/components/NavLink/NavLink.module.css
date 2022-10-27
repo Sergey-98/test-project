@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Montserrat-600'; 
+	src: url(../../assets/fonts/Montserrat-SemiBold.ttf); 
+}
+.none {
+    display: none;
+}
+.nav__nav_link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav__nav_link:hover {
+    cursor: pointer
+}
+.nav__nav_link_icon {
+    width: 32px;
+    height: 32px;
+}
+.nav__nav_link_text {
+    font-family: 'Montserrat-600';
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #1C1C1E;
+}

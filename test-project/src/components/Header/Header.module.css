@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'Montserrat-700'; 
+	src: url(../../assets/fonts/Montserrat-Bold.ttf); 
+}
+
+.header__block {
+  background-color: #4f27bf;
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 32px;
+  align-items: center;
+}
+.header__logo_img,
+.header__personal_data_img {
+  width: 48px;
+  height: 48px;
+}
+.header__logo {
+  width: 210px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__logo_text,
+.header__personal_data_text {
+  font-family: 'Montserrat-700';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #ffffff;
+}
+.header__personal_data {
+  width: 217px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .header__block {
+    position: fixed;
+    width: 768px;
+  }
+  .header__logo {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header__block {
+    position: fixed;
+    width: 320px;
+  }
+  .header__logo_text,
+  .header__personal_data_text {
+    font-size: 16px;
+    line-height: 24.38px;
+  }
+  .header__logo_img,
+  .header__personal_data_img {
+    width: 24px;
+    height: 24px;
+  }
+}
