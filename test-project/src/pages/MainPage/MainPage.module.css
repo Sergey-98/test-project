@@ -1,7 +1,5 @@
 .main_page {
     margin: 0 auto;
-    max-width: 1440px;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    border: 2px solid blueviolet;
+    grid-template-columns: 2.08fr 7.92fr;
 }

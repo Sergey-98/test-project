@@ -3,8 +3,10 @@
 	src: url(../../assets/fonts/Montserrat.ttf); 
 }
 .main__block {
+  width: 100%;
   padding-top: 32px;
   padding-left: 32px;
+  border: 2px solid blueviolet;
 }
 .main__title {
     font-family: 'Montserrat';
@@ -26,4 +28,10 @@
   margin-top: 24px;
   display: flex;
   gap: 24px;
+}
+.main__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
