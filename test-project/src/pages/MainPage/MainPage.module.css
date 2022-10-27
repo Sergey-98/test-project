@@ -1,5 +1,19 @@
 .main_page {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2.08fr 7.92fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.08fr 7.92fr;
+}
+@media (max-width: 768px) {
+    .main_page {
+        max-width: 768px;
+        grid-template-columns: 1fr;
+    }
+  
+}
+@media (max-width: 320px) {
+    .main_page {
+        max-width: 320px;
+        grid-template-columns: 1fr;
+    }
 }

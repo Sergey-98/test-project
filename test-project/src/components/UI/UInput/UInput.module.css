@@ -11,3 +11,16 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .myInput {
+    width: 500px;
+    height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .myInput {
+    width: 210px;
+    height: 25px;
+    font-size: 10px;
+  }
+}

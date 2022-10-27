@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
-import './Humburger.css';
+import React, { useContext } from 'react';
+import { Context } from 'components/Context/Context';
+import './Hamburger.css';
 
-export default function Humburger() {
-  const [isBurger, setBurgerState] = useState(false);
+export default function Hamburger() {
+  const { isBurger, setIsBurger } = useContext(Context);
   const changeButton = () => {
     if (!isBurger) {
-      setBurgerState(true);
+      setIsBurger(true);
     } else {
-      setBurgerState(false);
+      setIsBurger(false);
     }
   };
+
   return (
     <div className={isBurger ? 'b_hamburger is_active' : 'b_hamburger'} onClick={changeButton}>
       <span className="h_line line1"></span>

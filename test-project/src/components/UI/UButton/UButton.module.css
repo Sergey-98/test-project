@@ -20,3 +20,18 @@
   font-size: 26px;
   line-height: 32px;
 }
+
+@media (max-width: 768px) {
+  .myBtn {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .myBtn {
+    width: 120px;
+    height: 40px;
+    font-size: 10px;
+  }
+}

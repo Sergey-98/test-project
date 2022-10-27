@@ -1,46 +1,71 @@
 @font-face {
-	font-family: 'Montserrat'; 
-	src: url(../../assets/fonts/Montserrat.ttf); 
+  font-family: 'Montserrat';
+  src: url(../../assets/fonts/Montserrat.ttf);
 }
 
 .header__block {
-    background-color: #4F27BF;
-    padding: 0 32px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+  background-color: #4f27bf;
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 32px;
+  align-items: center;
+  /* grid-column: 1 / 3;
+  grid-row: 1 / 2; */
 }
-.header__logo_img, .header__personal_data_img {
-    width: 48px;
-    height: 48px;
+.header__logo_img,
+.header__personal_data_img {
+  width: 48px;
+  height: 48px;
 }
 .header__logo {
-    width: 210px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  width: 210px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
-.header__logo_text, .header__personal_data_text {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24.38px;
-    color: #FFFFFF;
+.header__logo_text,
+.header__personal_data_text {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #ffffff;
 }
 .header__personal_data {
-    width: 217px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  width: 217px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 @media (max-width: 768px) {
-    .header__logo {
-        display: none;
-    }
+  .header__block {
+    position: fixed;
+    width: 768px;
+  }
+  .header__logo {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header__block {
+    position: fixed;
+    width: 320px;
+  }
+  .header__logo_text,
+  .header__personal_data_text {
+    font-size: 16px;
+    line-height: 24.38px;
+  }
+  .header__logo_img,
+  .header__personal_data_img {
+    width: 24px;
+    height: 24px;
+  }
 }
