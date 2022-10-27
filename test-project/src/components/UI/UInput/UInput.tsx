@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import classes from './UInput.module.css';
+import { Context } from 'components/Context/Context';
 
 export default function UInput(props: { placeholder: string }) {
-  const [inputValue, setInputValue] = useState(localStorage.getItem('searchValue') ?? '');
+  const [inputValue, setInputValue] = useState('');
+  const { setValue } = useContext(Context);
   const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
+    setValue(inputValue);
   };
-  useEffect(() => {
-    localStorage.setItem('searchValue', inputValue);
-  });
   return (
     <div className={classes.myInput_wrapper}>
       <input

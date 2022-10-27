@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Montserrat-500';
+  src: url(../../assets/fonts/Montserrat-Medium.ttf);
+}
+.one_address_block {
+  height: 56px;
+  border-top: 1px solid #D7D7D7;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-500';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.38px;
+}

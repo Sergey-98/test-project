@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import classes from './Address.module.css';
 import UInput from 'components/UI/UInput/UInput';
 import UButton from 'components/UI/UButton/UButton';
 import ic_loop from '../../assets/svg/ic_loop.svg';
 import { getData } from 'API/getService';
+import { Context } from 'components/Context/Context';
+import { PropsAddress } from 'types/types';
+import OneAddress from 'components/OneAddress/OneAddress';
 
 export default function Address() {
-  const [searchString, setSearchString] = useState('');
+  const { value } = useContext(Context);
+  const [data, setData] = useState<PropsAddress[]>();
   const changeSearchValue = async () => {
-    const data = await getData('Саратов');
-    console.log(data);
-    // setSearchString(Search);
+    const data = await getData(value);
+    setData(data.suggestions);
   };
   return (
     <main className={classes.main__block}>
@@ -23,6 +26,12 @@ export default function Address() {
           <p>Поиск</p>
         </UButton>
       </div>
+      <section className={classes.main_block__address_block}>
+        <h2 className={classes.main_block__address_block__title}>Адреса</h2>
+        {data?.map((elem: PropsAddress, id: number): React.ReactNode => {
+          return <OneAddress value={elem.value} key={id} />;
+        })}
+      </section>
     </main>
   );
 }

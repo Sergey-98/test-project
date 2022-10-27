@@ -9,3 +9,11 @@ export type PropsButton = {
   onClick?: () => void;
   className: string;
 };
+
+export type PropsAddress = {
+  value?: string;
+};
+
+export type Address = {
+  suggestions: PropsAddress[];
+};

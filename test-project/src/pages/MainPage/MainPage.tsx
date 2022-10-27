@@ -8,8 +8,9 @@ import { Context } from 'components/Context/Context';
 
 export default function MainPage() {
   const [isBurger, setIsBurger] = useState(false);
+  const [value, setValue] = useState('');
   return (
-    <Context.Provider value={{ isBurger, setIsBurger }}>
+    <Context.Provider value={{ isBurger, setIsBurger, value, setValue }}>
       <div className={classes.main_page}>
         <Header />
         <BrowserRouter>
