@@ -2,9 +2,15 @@
 	font-family: 'Montserrat'; 
 	src: url(../../assets/fonts/Montserrat.ttf); 
 }
+.none {
+    display: none;
+}
 .nav__nav_link {
     display: flex;
     gap: 16px;
+}
+.nav__nav_link:hover {
+    cursor: pointer
 }
 .nav__nav_link_icon {
     width: 32px;

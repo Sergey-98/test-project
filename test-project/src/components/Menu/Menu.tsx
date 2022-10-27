@@ -42,7 +42,7 @@ export default function Menu() {
             return linksTitle[id] === 'Настройки' ? (
               <SettingsLinks src={elem} text={linksTitle[id]} key={id} />
             ) : (
-              <NavLink src={elem} text={linksTitle[id]} key={id} />
+              <NavLink src={elem} text={linksTitle[id]} key={id} isNone={false} />
             );
           })}
         </ul>

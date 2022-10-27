@@ -6,6 +6,9 @@
     display: flex;
     gap: 16px;
 }
+.settings__setting_link:hover {
+    cursor: pointer
+}
 .settings__setting_link_icon {
     width: 32px;
     height: 32px;
