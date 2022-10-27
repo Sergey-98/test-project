@@ -1,1 +1,1 @@
-Посмотреть deploy проекта можно по ссылке: sergey-yatsenko-testtask.netlify.app
+Посмотреть deploy проекта можно по ссылке: [Deploy](https://sergey-yatsenko-testtask.netlify.app/)
