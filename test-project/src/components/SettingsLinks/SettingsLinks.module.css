@@ -37,3 +37,14 @@
     -ms-border-radius: 0.5px;
     -o-border-radius: 0.5px;
 }
+.settings__setting_link_subicon_rotate {
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 0.5px;
+    -webkit-border-radius: 0.5px;
+    -moz-border-radius: 0.5px;
+    -ms-border-radius: 0.5px;
+    -o-border-radius: 0.5px;
+    transform: rotate(180deg);
+}

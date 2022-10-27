@@ -25,7 +25,11 @@ export default function SettingsLinks(props: Props) {
         <img
           src={ic_settings_after}
           alt="settings more"
-          className={classes.settings__setting_link_subicon}
+          className={
+            isOpenSetting
+              ? classes.settings__setting_link_subicon
+              : classes.settings__setting_link_subicon_rotate
+          }
         />
       </div>
       <ul className={classes.subsettings__list}>
