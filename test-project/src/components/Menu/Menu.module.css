@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Montserrat'; 
+	src: url(../../assets/fonts/Montserrat.ttf); 
+}
+.menu__block {
+    padding-left: 32px;
+    padding-top: 24px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 944px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+}
+.menu__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #1C1C1E;
+    margin-bottom: 32px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
