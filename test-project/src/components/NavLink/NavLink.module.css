@@ -8,6 +8,7 @@
 .nav__nav_link {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 .nav__nav_link:hover {
     cursor: pointer
